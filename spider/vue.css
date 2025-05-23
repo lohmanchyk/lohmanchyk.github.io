@@ -1,0 +1,70 @@
+
+
+/* Works on Chrome, Edge, and Safari */
+
+.spider-name-list::-webkit-scrollbar {
+    height: 4px;               /* висота/ширина скрола */
+  }
+  
+  .spider-name-list::-webkit-scrollbar-track {
+    background: rgba(0, 0, 0, 0);        /*смужка */
+  }
+  
+  .spider-name-list::-webkit-scrollbar-thumb { /*те, що їздить */
+    background-color: rgb(87, 46, 1);    
+    border-radius: 20px;      
+    /* border: 3px solid rgb(163, 163, 163);  */
+  }
+  .spider-name-list::-webkit-scrollbar-thumb:hover { /*те, що їздить */
+    background-color: rgb(0, 0, 0);    
+  
+  }
+/* Works on Firefox */
+.spider-name-list{
+    scrollbar-width: thin;
+    scrollbar-color: rgb(117, 81, 4) rgba(216, 216, 216, 0.574);
+  }
+
+.my-list-item{
+    background-color: #6d6d6d;
+    margin: 15px;
+    padding: 20px;
+    flex-basis: 200px;
+    flex-grow: 1;
+    flex-shrink: 0;
+}
+.my-list-item:hover{
+    cursor: pointer;
+}
+.active{
+    background-color: #553f21;
+    color: #f9f871;
+    border: 1px solid #d5d5d5;
+}
+.spider-name-list{
+    display: flex;
+    list-style-type: none;
+    padding-left: 0;
+    overflow-x: scroll;
+    align-items: center;
+}
+.spider-about{
+     
+    padding: 15px;
+}
+.spider-img{
+    max-width:50%;
+    padding-right: 30px;
+}
+.spider-info div{
+    margin: 10px 0;
+}
+
+.interesting-facts-list{
+    list-style-image: url(list-img.png);
+
+}
+.interesting-facts-list li{
+    border-bottom: 1px solid rgb(60, 41, 4);
+    margin-bottom: 10px;
+}
